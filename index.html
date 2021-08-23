@@ -1,41 +1,84 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>rock paper scissor</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-<body>
-<header>
-	<h1>
-		Rock Paper Scissor
-	</h1>
-</header>
-<div class="score_board">
-	<div id="user_label" class="badge">user</div>
-	<div id="computer_label" class="badge">comp</div>
-	<span id="user_score">0</span>:<span id="computer_score">0</span>	
-</div>
-<div class="result">
-	<p>Paper cover Rock. You Win!</p>
-</div>
-<div class="choices">
-	<div class="choice" id="p">
-		<img src="/image/paper.png" style="max-width: 100%; height:auto;" alt="">
-	
-	</div>
-	<div class="choice" id="r">
-		
-		<img src="/image/rock.png" style="max-width: 100%;height: auto;" alt="">
-		
-	</div>
-	<div class="choice" id="s">
-		<img src="/image/scisor.png" style="max-width: 100%;height: auto;" alt="">
-	</div>
-</div>
-<p id="action_message">Make Your Move</p>
-<script type="text/javascript" src="/app.js" charset="utf-8"></script>
-</body>
+  <head>
+    <title>rock paper scissor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      )
+      fbq('init', '127803566009130')
+      fbq('track', 'PageView')
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=127803566009130&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissor</h1>
+    </header>
+    <div class="score_board">
+      <div id="user_label" class="badge">user</div>
+      <div id="computer_label" class="badge">comp</div>
+      <span id="user_score">0</span>:<span id="computer_score">0</span>
+    </div>
+    <div class="result">
+      <p>Paper cover Rock. You Win!</p>
+    </div>
+    <div class="choices">
+      <div class="choice" id="p">
+        <img
+          src="/image/paper.png"
+          style="max-width: 100%; height: auto"
+          alt=""
+        />
+      </div>
+      <div class="choice" id="r">
+        <img
+          src="/image/rock.png"
+          style="max-width: 100%; height: auto"
+          alt=""
+        />
+      </div>
+      <div class="choice" id="s">
+        <img
+          src="/image/scisor.png"
+          style="max-width: 100%; height: auto"
+          alt=""
+        />
+      </div>
+    </div>
+    <p id="action_message">Make Your Move</p>
+    <script type="text/javascript" src="/app.js" charset="utf-8"></script>
+  </body>
 </html>
